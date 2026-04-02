@@ -1,0 +1,515 @@
+<!--
+  Produto: Clube do Cão Saudável (Upsell Final)
+  Proprietário: Protocolo Pele Limpa Canina
+  Data: 2026-04-01
+  ID: PROT-1743465603
+  Uso comercial restrito ao proprietário. Reprodução não autorizada proibida.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Último passo: entre no Clube do Cão Saudável">
+  <meta property="og:description" content="Novos protocolos todo mês: alimentação, vermífugo, vacinação e pele. Grupo fechado de tutores sérios.">
+  <meta property="og:image" content="<!-- SUBSTITUA: URL da imagem og -->">
+  <title>Oferta Final — Clube do Cão Saudável</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== VARIÁVEIS ===== */
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --border: #222222;
+      --text: #f5f5f5;
+      --muted: #888888;
+      --accent: #f97316;
+      --highlight: #fbbf24;
+      --green: #22c55e;
+      --red: #ef4444;
+      --gold: #f59e0b;
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== UTILITÁRIOS ===== */
+    .container { width: 100%; max-width: 640px; margin: 0 auto; padding: 0 20px; }
+    .accent { color: var(--accent); }
+    .gold   { color: var(--gold); }
+    section { padding: 48px 0; }
+
+    /* ===== BARRA TOPO ===== */
+    .top-bar {
+      background: linear-gradient(90deg, #1a1a00, #2a2000, #1a1a00);
+      border-bottom: 1px solid var(--gold);
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--surface);
+      padding: 52px 0 44px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: #000;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(26px, 6vw, 40px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero .sub {
+      font-size: clamp(15px, 3vw, 17px);
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ===== O QUE É ===== */
+    .oque-e {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .oque-e h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(20px, 4.5vw, 28px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+    .oque-e p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    /* ===== BENEFÍCIOS ===== */
+    .beneficios {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .beneficios h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--gold);
+    }
+    .beneficio-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .beneficio-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 18px;
+      border-radius: 8px;
+    }
+    .beneficio-item .icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .beneficio-item h4 {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .beneficio-item p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ===== PROVA SOCIAL ===== */
+    .prova {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .prova h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .depoimento {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .depoimento .stars { color: var(--gold); margin-bottom: 10px; }
+    .depoimento blockquote {
+      font-size: 14px;
+      line-height: 1.6;
+      font-style: italic;
+      color: #d4d4d4;
+      margin-bottom: 12px;
+    }
+    .depoimento .nome { font-size: 13px; font-weight: 500; }
+    .depoimento .resultado { font-size: 12px; color: var(--green); margin-top: 2px; }
+
+    /* ===== OFERTA ===== */
+    .oferta { background: var(--surface); }
+    .oferta-box {
+      background: var(--bg);
+      border: 1px solid var(--gold);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .oferta-box .label {
+      display: inline-block;
+      background: var(--gold);
+      color: #000;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .oferta-box h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(20px, 4vw, 26px);
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .oferta-box .descricao {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .inclui-mini {
+      list-style: none;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .inclui-mini li {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+      align-items: flex-start;
+      line-height: 1.4;
+    }
+    .inclui-mini li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .preco-bloco { margin-bottom: 24px; }
+    .preco-de {
+      color: var(--muted);
+      font-size: 16px;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+    }
+    .preco-real {
+      font-family: 'Poppins', sans-serif;
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .preco-real sup { font-size: 24px; vertical-align: super; }
+    .preco-periodo {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .preco-economia {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    /* ===== BOTÕES ===== */
+    .btn-aceitar {
+      display: block;
+      background: var(--gold);
+      color: #000;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+      padding: 18px 32px;
+      border-radius: 8px;
+      min-height: 56px;
+      transition: all 0.2s ease;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .btn-aceitar:hover { background: #d97706; transform: translateY(-2px); }
+    .btn-aceitar small {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 4px;
+      opacity: 0.8;
+    }
+    .btn-recusar {
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding: 10px;
+      cursor: pointer;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+    .btn-recusar:hover { color: var(--red); }
+
+    /* ===== GARANTIA MINI ===== */
+    .garantia-mini {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .garantia-mini .icon { font-size: 26px; flex-shrink: 0; }
+    .garantia-mini p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--bg);
+      padding: 24px 20px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    footer p { color: var(--muted); font-size: 12px; line-height: 1.8; }
+    footer a { color: var(--muted); text-decoration: underline; }
+
+    /* ===== DESKTOP ===== */
+    @media (min-width: 769px) {
+      .hero, .oque-e, .beneficios, .prova, .oferta { padding: 72px 0; }
+      .beneficio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== VERIFICAÇÃO DE DOMÍNIO ===== -->
+  <script>
+    (function() {
+      var dominiosAutorizados = [
+        'protocolopelelimpacanina.com.br',
+        'www.protocolopelelimpacanina.com.br',
+        'localhost',
+        '127.0.0.1'
+      ];
+      var host = window.location.hostname;
+      if (!dominiosAutorizados.includes(host)) {
+        document.documentElement.innerHTML = '';
+        window.location.replace('https://protocolopelelimpacanina.com.br');
+      }
+    })();
+  </script>
+
+  <!-- ===== BARRA TOPO ===== -->
+  <div class="top-bar">
+    ⭐ Oferta final. Disponível apenas neste momento.
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <span class="tag">Última oferta</span>
+      <h1>Novos protocolos todo mês para quem leva a <span class="accent">saúde do cão</span> a sério</h1>
+      <p class="sub">Entre no Clube do Cão Saudável: grupo fechado com protocolos mensais de pele, alimentação, vermífugo e vacinação. Tudo validado, tudo prático, tudo com ingredientes acessíveis.</p>
+    </div>
+  </section>
+
+  <!-- ===== O QUE É ===== -->
+  <section class="oque-e">
+    <div class="container">
+      <h2>O que é o Clube do Cão Saudável</h2>
+      <p>É um grupo fechado de tutores que não ficam só no veterinário quando o bicho pega. Todo mês um novo protocolo é entregue: pele, alimentação natural, vermifugação correta, calendário vacinal simplificado, com linguagem direta e sem enrolação.</p>
+      <p>Você resolve a coceira hoje com o Protocolo Pele Limpa. No próximo mês, resolve o próximo problema. Sem precisar ficar procurando informação espalhada em 50 lugares.</p>
+    </div>
+  </section>
+
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section class="beneficios">
+    <div class="container">
+      <h3>O que você recebe todo mês</h3>
+      <div class="beneficio-grid">
+
+        <div class="beneficio-item">
+          <span class="icon">🧴</span>
+          <div>
+            <h4>Protocolo mensal de pele</h4>
+            <p>Cada mês um problema diferente: coceira, fungos, seborreia, dermatite. Sempre com fórmula e plano de banhos.</p>
+          </div>
+        </div>
+
+        <div class="beneficio-item">
+          <span class="icon">🥩</span>
+          <div>
+            <h4>Guia de alimentação natural</h4>
+            <p>O que pode, o que não pode, como introduzir comida natural sem arriscar a saúde do cão.</p>
+          </div>
+        </div>
+
+        <div class="beneficio-item">
+          <span class="icon">💊</span>
+          <div>
+            <h4>Calendário de vermifugação</h4>
+            <p>Frequência correta por raça e peso, sem depender do veterinário para uma informação simples.</p>
+          </div>
+        </div>
+
+        <div class="beneficio-item">
+          <span class="icon">💬</span>
+          <div>
+            <h4>Grupo fechado de tutores</h4>
+            <p>Comunidade ativa de quem usa os protocolos. Troca experiências, tira dúvidas e acompanha resultados junto.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROVA SOCIAL ===== -->
+  <section class="prova">
+    <div class="container">
+      <h3>O que membros dizem sobre o Clube</h3>
+
+      <div class="depoimento">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Entrei pelo protocolo de pele e fiquei pelo clube. Todo mês aprendo algo novo que faço questão de aplicar. Minha cachorra nunca esteve tão saudável."</blockquote>
+        <p class="nome">Renata C. · Porto Alegre, RS</p>
+        <p class="resultado">✓ Membro há 4 meses</p>
+      </div>
+
+      <div class="depoimento">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Sempre tive medo de dar comida natural pro meu cão. O guia do clube tirou todas as minhas dúvidas. Agora ele come muito melhor e ficou mais disposto."</blockquote>
+        <p class="nome">Paulo M. · Recife, PE</p>
+        <p class="resultado">✓ Membro há 2 meses</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== OFERTA ===== -->
+  <section class="oferta">
+    <div class="container">
+      <div class="oferta-box">
+        <span class="label">Oferta de entrada. Só agora.</span>
+        <h2>Clube do Cão Saudável<br><span class="gold">Protocolos novos todo mês</span></h2>
+        <p class="descricao">Acesso ao grupo fechado + protocolo mensal de pele + guia de alimentação + calendário de vermifugação e vacinação.</p>
+
+        <!-- SUBSTITUA: mockup ou logo do clube -->
+        <!-- <img src="URL_AQUI" alt="Clube do Cão Saudável" style="max-width:220px; margin: 0 auto 24px; display:block;" loading="lazy"> -->
+
+        <ul class="inclui-mini">
+          <li>Protocolo mensal de pele (novo problema resolvido a cada mês)</li>
+          <li>Guia de alimentação natural com o que pode e não pode</li>
+          <li>Calendário de vermifugação e vacinação por raça e peso</li>
+          <li>Acesso ao grupo fechado com outros tutores</li>
+          <li>Todo o conteúdo anterior disponível desde o primeiro dia</li>
+        </ul>
+
+        <div class="preco-bloco">
+          <p class="preco-de">De R$127/mês</p>
+          <p class="preco-real"><sup>R$</sup>67</p>
+          <p class="preco-periodo">pagamento único, acesso por 12 meses</p>
+          <span class="preco-economia">Você economiza R$60 na entrada</span>
+        </div>
+
+        <a href="<!-- SUBSTITUA: link do checkout upsell final -->" class="btn-aceitar">
+          Entrar no Clube Agora por R$67
+          <small>Acesso imediato ao grupo + todos os protocolos</small>
+        </a>
+
+        <a href="<!-- SUBSTITUA: link de recusa / página de obrigado -->" class="btn-recusar">
+          Não, prefiro ficar só com o que já comprei
+        </a>
+
+        <div class="garantia-mini">
+          <span class="icon">🛡️</span>
+          <p>Coberto pela garantia de 30 dias. Se não gostar do clube no primeiro mês, devolvemos tudo sem burocracia.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>
+      © 2026 Protocolo Pele Limpa Canina. Todos os direitos reservados.<br>
+      <a href="<!-- SUBSTITUA: link termos de uso -->">Termos de Uso</a> · <a href="<!-- SUBSTITUA: link política de privacidade -->">Política de Privacidade</a>
+    </p>
+    <p style="margin-top: 8px;">Este produto não substitui consulta veterinária. Resultados individuais podem variar.</p>
+  </footer>
+
+  <!-- ===== BLOQUEIO DE INSPEÇÃO ===== */
+  <script>
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'F12') { e.preventDefault(); return false; }
+      if (e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) { e.preventDefault(); return false; }
+      if (e.ctrlKey && e.key === 'U') { e.preventDefault(); return false; }
+    });
+  </script>
+
+</body>
+</html>
